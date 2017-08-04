@@ -5,8 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RSA2017Test"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+         Title="RSA ENCRYPTION AND DECRYPTION SYSTEM (ECE PROJECT 2017,UNIVERSITY OF NIGERIA, NSUKKA.)" Height="764" Width="1400">
+    <Grid Height="764" Width="1400">
+        <Grid.Background>
+            <ImageBrush x:Name="backgroundImage"  Stretch="UniformToFill" />
+        </Grid.Background>
+        <Frame Height="764" Width="1400" HorizontalAlignment="Stretch" VerticalAlignment="Top" Name="Mainframe"  >
+
+        </Frame>
     </Grid>
 </Window>

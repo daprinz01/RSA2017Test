@@ -1,0 +1,26 @@
+﻿<Page x:Class="RSA2017Test.Help"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:RSA2017Test"
+      mc:Ignorable="d" 
+      d:DesignHeight="739" d:DesignWidth="1400"
+      Title="Help">
+
+    <Grid >
+        <ScrollViewer VerticalScrollBarVisibility="Visible">
+            <StackPanel>
+                <Label Content="ABOUT" HorizontalAlignment="Center"  VerticalAlignment="Top" FontWeight="Bold" FontStyle="Italic" FontSize="72"  FontFamily="Modern No. 20" Foreground="CadetBlue">
+                    <Label.Effect>
+                        <DropShadowEffect Color="#FF13BB23"/>
+
+                    </Label.Effect>
+
+                </Label>
+                <Label Name="About" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10,92,10,0" FontSize="24px" Width="1380" Foreground="#FFF90B0B" />
+
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>

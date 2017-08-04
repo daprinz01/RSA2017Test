@@ -1,0 +1,30 @@
+﻿<Page x:Class="RSA2017Test.PlaintextDecryption"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:RSA2017Test"
+      mc:Ignorable="d" 
+     d:DesignHeight="739" d:DesignWidth="1400"
+      Title="PlainText">
+
+    <Grid>
+        <GroupBox Name="Select" Height="83" Width="540" VerticalAlignment="Top" HorizontalAlignment="Left" Tag="Select File" Header="Select File" Foreground="#FFF9F6F6">
+            <StackPanel HorizontalAlignment="Left" Height="83"  VerticalAlignment="Top" Width="540" Orientation="Horizontal">
+                <TextBox Height="38" TextWrapping="Wrap"  HorizontalAlignment="Left" VerticalAlignment="Center" VerticalContentAlignment="Center" Width="248" x:Name="Filetxtbox"/>
+                <Button Content="..." Width="96" Click="Button_Click" x:Name="Filebtn" Height="38" Margin="0,22,0,23" />
+            </StackPanel>
+        </GroupBox>
+        <TextBox HorizontalAlignment="Left" Margin="40,140,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="217" Width="500" Name="PlainTxtBlock" AcceptsReturn="True" AcceptsTab="True" VerticalScrollBarVisibility="Auto"/>
+        <TextBox HorizontalAlignment="Left" Margin="40,409,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="234" Width="500" Name="EncryptedTxtBlock"/>
+        <Button Content="Decrypt" HorizontalAlignment="Left" Margin="429,357,0,0" VerticalAlignment="Top" Width="75" Name="Encrptbtn" IsEnabled="True" Click="Encrptbtn_Click"/>
+        <Button Content="Save" HorizontalAlignment="Left" Margin="429,648,0,0" VerticalAlignment="Top" Width="75" Name="Savebtn" IsEnabled="False" Click="Savebtn_Click"/>
+        <Label Content="Decrypted Text" HorizontalAlignment="Left" Margin="40,109,0,0" VerticalAlignment="Top" Width="117" Background="#FFFDFAFA"/>
+        <Label Content="Plain Text" HorizontalAlignment="Left" Margin="40,383,0,0" VerticalAlignment="Top" Width="117" Background="#FFF9F8F8"/>
+        <Label Content="Encryption Time (in miliseconds):" HorizontalAlignment="Left" Margin="811,206,0,0" VerticalAlignment="Top" Width="239" Background="#FFFBF8F8"/>
+        <Label Name="Timerlbl" Content="00:00:00" HorizontalAlignment="Left" Margin="811,237,0,0" VerticalAlignment="Top" Width="491" Height="314" FontSize="48" Foreground="#FFFBFAFA"/>
+        <ComboBox HorizontalAlignment="Left" Margin="910,40,0,0" VerticalAlignment="Top" Width="392" Height="43" Name="SelectUser"/>
+        <Label Content="Select Receiver" HorizontalAlignment="Left" Margin="811,57,0,0" VerticalAlignment="Top" Width="99" Background="#FFFBFAFA"/>
+
+    </Grid>
+</Page>

@@ -1,0 +1,31 @@
+﻿<Page x:Class="RSA2017Test.Sign_Up"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:RSA2017Test"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="300" VerticalAlignment="Center" HorizontalAlignment="Center"
+      Title="Sign Up">
+
+    <Grid Height="450" Width="300">
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="120,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" Name="Name"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="120,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" Name="Username"/>
+        <TextBox x:Name="EmailTxt" HorizontalAlignment="Left" Height="23" Margin="120,103,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="170"/>
+        <PasswordBox HorizontalAlignment="Left" Margin="120,137,0,0" VerticalAlignment="Top" Width="170" Height="23" Name="Password"/>
+        <PasswordBox HorizontalAlignment="Left" Margin="120,168,0,0" VerticalAlignment="Top" Width="170" Height="23" Name="ConfirmPassword"/>
+        <ComboBox x:Name="KeySizeBox" HorizontalAlignment="Left" Margin="120,196,0,0" VerticalAlignment="Top" Width="170"/>
+        <Button Content="Sign Up" HorizontalAlignment="Left" Margin="10,223,0,0" VerticalAlignment="Top" Width="280" Background="Green" Click="Sign_Up_Click"/>
+        <Label Content="Register a new account"  HorizontalAlignment="Left" Margin="58,10,0,0" VerticalAlignment="Top" Width="206"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Width="57"/>
+        <Label Content="Username" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top"/>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="10,134,0,0" VerticalAlignment="Top"/>
+        <Label Content="Confirm Password" HorizontalAlignment="Left" Margin="10,165,0,0" VerticalAlignment="Top"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Width="280" Visibility="Hidden" Name="ErrorMsg"/>
+        <Label Content="Key Size" HorizontalAlignment="Left" Margin="10,191,0,0" VerticalAlignment="Top" Width="105"/>
+        <Label Content="Email" HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top"/>
+        <Label Content="Key Generation Time (in milliseconds):" HorizontalAlignment="Left" Margin="323,10,-246,0" VerticalAlignment="Top" Width="223"/>
+        <Label Content="00:00:00" Name="KeyGenTime" HorizontalAlignment="Left" Margin="323,0,-480,307" VerticalAlignment="Bottom" Width="457" Height="102" FontSize="48" FontFamily="Monotype Corsiva"/>
+
+    </Grid>
+</Page>

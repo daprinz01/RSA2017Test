@@ -1,0 +1,97 @@
+﻿<Page x:Class="RSA2017Test.RSAIndex"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:RSA2017Test"
+      mc:Ignorable="d" 
+      d:DesignHeight="764" d:DesignWidth="1400"
+      Title="RSAIndex">
+
+    <Grid Height="764" Width="1400">
+        <!--This section defines the top toolbar-->
+        <ToolBar Height="25" VerticalAlignment="Top" Width="1400">
+            <MenuItem Click="AddPresetButton_Click" x:Name="File">
+                <!--  <MenuItem.Icon>
+               <Image Source="/MyApp.Application;component/Resources/add.png" Height="20"/> 
+            </MenuItem.Icon>-->
+                <MenuItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="File"/>
+                        <!-- <Image Source="/MyApp.Application;component/Resources/arrow_down_simple.png"
+                    Height="10" Margin="2,0,0,0"/>-->
+                    </StackPanel>
+                </MenuItem.Header>
+                <MenuItem.ContextMenu>
+                    <ContextMenu>
+
+                    </ContextMenu>
+                </MenuItem.ContextMenu>
+            </MenuItem>
+
+            <MenuItem Click="AddPresetButton_Click" x:Name="Encrypt">
+                <!--  <MenuItem.Icon>
+               <Image Source="/MyApp.Application;component/Resources/add.png" Height="20"/> 
+            </MenuItem.Icon>-->
+                <MenuItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Encrypt"/>
+                        <!-- <Image Source="/MyApp.Application;component/Resources/arrow_down_simple.png"
+                    Height="10" Margin="2,0,0,0"/>-->
+                    </StackPanel>
+                </MenuItem.Header>
+                <MenuItem.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="Plain Text" Click="Plaintext_Click"/>
+                        <MenuItem Header="Image" Click="Image_Click"/>
+                        <MenuItem Header="Audio"/>
+                        <MenuItem Header="Video"/>
+                    </ContextMenu>
+                </MenuItem.ContextMenu>
+            </MenuItem>
+
+            <MenuItem Click="AddPresetButton_Click"  x:Name="Decrypt">
+                <!--  <MenuItem.Icon>
+               <Image Source="/MyApp.Application;component/Resources/add.png" Height="20"/> 
+            </MenuItem.Icon>-->
+                <MenuItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Decrypt"/>
+                        <!-- <Image Source="/MyApp.Application;component/Resources/arrow_down_simple.png"
+                    Height="10" Margin="2,0,0,0"/>-->
+                    </StackPanel>
+                </MenuItem.Header>
+                <MenuItem.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="PlainText" Click="PlaintextD_Click"/>
+                        <MenuItem Header="Image"/>
+                        <MenuItem Header="Audio"/>
+                        <MenuItem Header="Video"/>
+                    </ContextMenu>
+                </MenuItem.ContextMenu>
+            </MenuItem>
+
+            <MenuItem Click="Help_Click"  x:Name="Help">
+                <!--  <MenuItem.Icon>
+               <Image Source="/MyApp.Application;component/Resources/add.png" Height="20"/> 
+            </MenuItem.Icon>-->
+                <MenuItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Help"/>
+                        <!-- <Image Source="/MyApp.Application;component/Resources/arrow_down_simple.png"
+                    Height="10" Margin="2,0,0,0"/>-->
+                    </StackPanel>
+                </MenuItem.Header>
+                <MenuItem.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="Add 1"/>
+                        <MenuItem Header="Add 2"/>
+                        <MenuItem Header="Add 3"/>
+                    </ContextMenu>
+                </MenuItem.ContextMenu>
+            </MenuItem>
+        </ToolBar>
+        <!--Frame to show the different sections-->
+        <Frame  HorizontalAlignment="Stretch" Height="739" Margin="0,25,0,0" VerticalAlignment="Top" Width="1400" Name="EncryptionFrame"/>
+    </Grid>
+</Page>

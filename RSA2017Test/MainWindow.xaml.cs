@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +24,11 @@ namespace RSA2017Test
         public MainWindow()
         {
             InitializeComponent();
+            string helpurl1 = ((Directory.GetCurrentDirectory() + "\\Images\\free-encryption.jpg"));
+            //System.Diagnostics.Process.Start(helpurl1);
+            ImageSource imageSource = new BitmapImage(new Uri(helpurl1));
+            backgroundImage.ImageSource = imageSource;
+            Mainframe.Navigate(new Login());
         }
     }
 }
